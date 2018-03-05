@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+
+// ------------------- VARIABLES ----------------------
+
     computerNum = Math.floor(Math.random()*100)+19;
     var win =0;
     var lose = 0;
@@ -8,7 +11,8 @@ $(document).ready(function() {
     counter =0;
     firstGame =false;
     
-    //---------------------------------
+// ------------------- GENERATE RANDOM NUMBER----------------------
+
     function resetNUm(){
         counter=0;
     computerNum =Math.floor(Math.random()*100)+19;
@@ -17,7 +21,9 @@ $(document).ready(function() {
     
     
     }
-    //--------------------------
+   
+// ------------------- RESET ----------------------
+
     function reset(){
      
     
@@ -31,7 +37,8 @@ $(document).ready(function() {
         firstGame =true;
     }
     
-    //--------------------------
+// ------------------- RANDOM CRYSTALS ----------------------
+
     
     $(".crystals").on("click" ,function(){
     
@@ -68,6 +75,7 @@ $(document).ready(function() {
         }
       });
     
+// ------------------- RUN IT ----------------------
      
       $("#randomNumber").text(computerNum);
       $("#result").text(counter);
